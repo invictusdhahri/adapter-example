@@ -6,7 +6,18 @@ This is a [Next.js](https://nextjs.org) project demonstrating how to integrate t
 
 - Node.js 18+ installed
 - pnpm (recommended) or npm
-- A Moongate API key ([Get one here](https://moongate.com))
+- A Moongate API key (see below)
+
+## Getting Your API Key
+
+**Important:** Before you can use the Moongate SDK, you need to obtain an API key:
+
+1. Visit [partner.moongate.one](https://partner.moongate.one)
+2. Create an account
+3. Wait for approval from the Moongate team
+4. Once approved, you'll receive your API key
+
+This is a required first step - the SDK will not work without a valid API key.
 
 ## Installation
 
@@ -89,6 +100,12 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) to see the Moongate wallet connect button.
 
+## Example
+
+![Moongate Connect Button](./image.png)
+
+The Moongate connect button will appear centered on the page, allowing users to connect their wallet.
+
 ## Known Issues
 
 ### DialogTitle Accessibility Warning
@@ -120,11 +137,6 @@ adapter-example/
 - [Next.js Documentation](https://nextjs.org/docs)
 - [@moongate/sdk on npm](https://www.npmjs.com/package/@moongate/sdk)
 
-## Troubleshooting
-
-### npm install fails with "Unsupported URL Type: workspace:*"
-
-This happens because the package uses pnpm workspace protocols. Solution: Use `pnpm` instead of `npm`.
 
 ### API Key not loading
 
